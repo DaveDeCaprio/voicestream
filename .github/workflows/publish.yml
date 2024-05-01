@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
       - name: Create Release
-        uses: mikepenz/action-gh-release@v0.2.0-a03 #softprops/action-gh-release
+        uses: mikepenz/action-gh-release@v1 #softprops/action-gh-release
         with:
           body: ${{needs.build.outputs.changelog}}
           files: artifact/
